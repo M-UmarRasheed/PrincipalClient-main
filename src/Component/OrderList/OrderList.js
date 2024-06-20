@@ -62,7 +62,6 @@ const OrderList = () => {
     fetch(`http://localhost:4000/allUsers`)
       .then((res) => res.json())
       .then((data) => {
-        console.log("🚀 ~ .then ~ data:", data)
         setMainData(data);
         setOrderList(data);
       });
