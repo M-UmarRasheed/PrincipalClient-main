@@ -1,0 +1,8 @@
+.bootstrap-select.btn-group .dropdown-menu li a:hover {
+  color: whitesmoke !important;
+  background: #bf5279 !important;
+}
+input::-webkit-input-placeholder {
+  color: black !important; /*Change the placeholder color*/
+  opacity: 1 !important; /*Change the opacity between 0 and 1*/
+}

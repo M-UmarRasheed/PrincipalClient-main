@@ -1,0 +1,16 @@
+.uploadBtn {
+  border: 1px solid rgb(46 6 83);
+
+  padding: 9px 16px;
+  font-size: 17px;
+  border-radius: 3px;
+  background-color: #4847a430;
+  font-weight: 400;
+}
+
+.uploadBtn p {
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0;
+  padding: 10px 20px;
+}
