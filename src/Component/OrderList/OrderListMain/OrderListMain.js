@@ -84,7 +84,7 @@ const OrderListMain = ({ orderList, setOrderList }) => {
     console.log(id);
     fetch(
       // `http://principalserver-env-1.eba-hyfmp7pu.us-east-2.elasticbeanstalk.com/deleteUser/${id}`,
-      `http://localhost:4000/deleteUser/${id}`,
+      `http://3.254.126.176:4000/deleteUser/${id}`,
 
       {
         method: "DELETE",
@@ -97,7 +97,7 @@ const OrderListMain = ({ orderList, setOrderList }) => {
           const password = sessionStorage.getItem("password");
 
           fetch(
-            `http://http://localhost:4000/allUsers/${userName}-${password}`
+            `http://3.254.126.176:4000/allUsers`
           )
             .then((res) => res.json())
             .then((data) => {
@@ -112,7 +112,7 @@ const OrderListMain = ({ orderList, setOrderList }) => {
     console.log(id, e.target.value, e.target.name);
     if (e.target.value) {
       fetch(
-        "http://localhost:4000/updateUserData",
+        "http://3.254.126.176:4000/updateUserData",
         {
           method: "PATCH",
           headers: { "Content-Type": "application/json" },
@@ -135,7 +135,7 @@ const OrderListMain = ({ orderList, setOrderList }) => {
   const handleChange = (id, e) => {
     fetch(
       // "http://principalserver-env-1.eba-hyfmp7pu.us-east-2.elasticbeanstalk.com/updateStatus",
-      "http://localhost:4000/updateStatus",
+      "http://3.254.126.176:4000/updateStatus",
       {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
@@ -152,7 +152,7 @@ const OrderListMain = ({ orderList, setOrderList }) => {
   const handleSmsDate = (id, e) => {
     fetch(
       // "http://principalserver-env-1.eba-hyfmp7pu.us-east-2.elasticbeanstalk.com/updateSmsDate",
-      "http://localhost:4000/updateSmsDate",
+      "http://3.254.126.176:4000/updateSmsDate",
       {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },

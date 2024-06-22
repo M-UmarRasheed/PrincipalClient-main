@@ -18,8 +18,8 @@ const LicReg = () => {
 
   const onSubmit = (data, e) => {
     console.log(data);
-     const url = `http://localhost:4000/LicenseRegistration`;
-
+    //  const url = `http://localhost:4000/LicenseRegistration`;
+    const url = `http://3.254.126.176:4000/LicenseRegistration`
     // const url = `http://principalserver-env-1.eba-hyfmp7pu.us-east-2.elasticbeanstalk.com/LicenseRegistration`;
 
     axios.post(url, data).then((res) => {
@@ -145,7 +145,7 @@ const LicReg = () => {
         >
           <form
             className="excelFile shadow mt-5 p-5 rounded"
-            action="http://localhost:4000/LicenseInfoUpload"
+            action="http://3.254.126.176:4000/LicenseInfoUpload"
             method="post"
             encType="multipart/form-data"
           >

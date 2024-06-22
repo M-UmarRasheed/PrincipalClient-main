@@ -59,7 +59,7 @@ const OrderList = () => {
   const password = sessionStorage.getItem("password");
   useEffect(() => {
     // fetch(`http://principalserver-env-1.eba-hyfmp7pu.us-east-2.elasticbeanstalk.com/allUsers/${userName}-${password}`)
-    fetch(`http://localhost:4000/allUsers`)
+    fetch(`http://3.254.126.176:4000/allUsers`)
       .then((res) => res.json())
       .then((data) => {
         setMainData(data);

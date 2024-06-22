@@ -19,7 +19,7 @@ const Login = () => {
   const onSubmit = (data, e) => {
     console.log(data);
     // const url = `http://principalserver-env-1.eba-hyfmp7pu.us-east-2.elasticbeanstalk.com/isAdmin/${
-      const url = `http://localhost:4000/isAdmin/${
+      const url = `http://3.254.126.176:4000/isAdmin/${
       data.userName + "-" + data.password
     }`;
     axios.get(url).then((res) => {
